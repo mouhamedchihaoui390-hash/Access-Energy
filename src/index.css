@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+/* Printing (window.print / Ctrl+P) must only output the document preview
+   (#printable-document), never the rest of the app (sidebar, header, other
+   tabs). Without this, Chrome prints the whole page layout as extra pages. */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-document,
+  #printable-document * {
+    visibility: visible;
+  }
+  #printable-document {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "Access ERP Commercial",
+  "description": "Système complet de gestion commerciale et facturation pour entreprises tunisiennes (Devis, BL, Factures, Règlements, Clients, Catalogue, Documents officiels).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><script>
+(function () {
+  var path = window.location.pathname;
+  var repo = '/Access-Energy';
+  if (path.indexOf(repo) === 0) {
+    var rest = path.slice(repo.length);
+    window.location.replace(repo + '/?p=' + encodeURIComponent(rest + window.location.search + window.location.hash));
+  }
+})();
+</script></head><body></body></html>
